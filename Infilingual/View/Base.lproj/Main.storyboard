@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ttt-Vf-bZS">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -40,7 +40,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wDh-IT-WiS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1183" y="304"/>
+            <point key="canvasLocation" x="1190" y="304"/>
         </scene>
         <!--Welcome-->
         <scene sceneID="0Ki-wx-aHG">
@@ -76,6 +76,9 @@
                                 <state key="normal" title="Login">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="loginPressed:" destination="Mvz-hd-ufm" eventType="touchUpInside" id="UxN-3y-Kob"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="infilingual2" translatesAutoresizingMaskIntoConstraints="NO" id="z4i-ff-pdJ">
                                 <rect key="frame" x="40" y="143" width="295" height="106"/>
@@ -99,6 +102,8 @@
                     </view>
                     <navigationItem key="navigationItem" title="Welcome" id="mal-OI-dtv"/>
                     <connections>
+                        <outlet property="emailTextField" destination="457-Ze-04J" id="9Rf-es-swy"/>
+                        <outlet property="passwordTextField" destination="7K2-oZ-u72" id="yej-NY-rZw"/>
                         <segue destination="Lsc-v0-t8j" kind="show" identifier="goToChat" id="8bw-5B-PGs"/>
                     </connections>
                 </viewController>

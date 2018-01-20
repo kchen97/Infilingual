@@ -7,8 +7,12 @@ target 'Infilingual' do
 
   # Pods for Infilingual
 
+pod 'Firebase', '~>3.17'
+pod 'Firebase/Auth'
+pod 'Firebase/Database'
 pod 'Alamofire'
 pod 'ChameleonFramework'
 pod 'SwiftyJSON'
+pod 'SVProgressHUD'
 
 end

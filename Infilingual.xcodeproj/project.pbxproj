@@ -13,6 +13,10 @@
 		8E3AE8122011C39D002303EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E3AE8112011C39D002303EA /* Assets.xcassets */; };
 		8E3AE8152011C39D002303EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E3AE8132011C39D002303EA /* LaunchScreen.storyboard */; };
 		8EA9E96C2011D83300E282E5 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA9E96B2011D83300E282E5 /* WelcomeViewController.swift */; };
+		8EA9E970201337EC00E282E5 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA9E96F201337EC00E282E5 /* Message.swift */; };
+		8EA9E977201345B800E282E5 /* CustomMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA9E975201345B800E282E5 /* CustomMessageCell.swift */; };
+		8EA9E978201345B800E282E5 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EA9E976201345B800E282E5 /* MessageCell.xib */; };
+		8EA9E97A2013488900E282E5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8EA9E9792013488900E282E5 /* GoogleService-Info.plist */; };
 		E825D0782A91138D0D323DAD /* Pods_Infilingual.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A4848EB7BABBF34C3775E57 /* Pods_Infilingual.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +31,10 @@
 		8E3AE8142011C39D002303EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E3AE8162011C39D002303EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8EA9E96B2011D83300E282E5 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		8EA9E96F201337EC00E282E5 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		8EA9E975201345B800E282E5 /* CustomMessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomMessageCell.swift; sourceTree = "<group>"; };
+		8EA9E976201345B800E282E5 /* MessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
+		8EA9E9792013488900E282E5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F3DC130B8EA6B2CBFDAAFD38 /* Pods-Infilingual.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Infilingual.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Infilingual/Pods-Infilingual.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,8 +80,9 @@
 		8E3AE8092011C39D002303EA /* Infilingual */ = {
 			isa = PBXGroup;
 			children = (
-				8EA9E96D201336D600E282E5 /* Custom Cells */,
-				8E3AE81F2011C5CF002303EA /* Misc. */,
+				8E3AE8112011C39D002303EA /* Assets.xcassets */,
+				8EA9E9792013488900E282E5 /* GoogleService-Info.plist */,
+				8E3AE8162011C39D002303EA /* Info.plist */,
 				8E3AE81E2011C5BB002303EA /* Model */,
 				8E3AE81D2011C5B6002303EA /* View */,
 				8E3AE81C2011C5AF002303EA /* Controller */,
@@ -94,6 +103,7 @@
 		8E3AE81D2011C5B6002303EA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8EA9E96D201336D600E282E5 /* Custom Cells */,
 				8E3AE80E2011C39D002303EA /* Main.storyboard */,
 				8E3AE8132011C39D002303EA /* LaunchScreen.storyboard */,
 			);
@@ -103,22 +113,16 @@
 		8E3AE81E2011C5BB002303EA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8EA9E96F201337EC00E282E5 /* Message.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		8E3AE81F2011C5CF002303EA /* Misc. */ = {
-			isa = PBXGroup;
-			children = (
-				8E3AE8112011C39D002303EA /* Assets.xcassets */,
-				8E3AE8162011C39D002303EA /* Info.plist */,
-			);
-			path = Misc.;
 			sourceTree = "<group>";
 		};
 		8EA9E96D201336D600E282E5 /* Custom Cells */ = {
 			isa = PBXGroup;
 			children = (
+				8EA9E975201345B800E282E5 /* CustomMessageCell.swift */,
+				8EA9E976201345B800E282E5 /* MessageCell.xib */,
 			);
 			path = "Custom Cells";
 			sourceTree = "<group>";
@@ -194,6 +198,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E3AE8152011C39D002303EA /* LaunchScreen.storyboard in Resources */,
+				8EA9E978201345B800E282E5 /* MessageCell.xib in Resources */,
+				8EA9E97A2013488900E282E5 /* GoogleService-Info.plist in Resources */,
 				8E3AE8122011C39D002303EA /* Assets.xcassets in Resources */,
 				8E3AE8102011C39D002303EA /* Main.storyboard in Resources */,
 			);
@@ -211,12 +217,18 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Infilingual/Pods-Infilingual-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,6 +277,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8EA9E96C2011D83300E282E5 /* WelcomeViewController.swift in Sources */,
+				8EA9E977201345B800E282E5 /* CustomMessageCell.swift in Sources */,
+				8EA9E970201337EC00E282E5 /* Message.swift in Sources */,
 				8E3AE80D2011C39D002303EA /* ChatViewController.swift in Sources */,
 				8E3AE80B2011C39D002303EA /* AppDelegate.swift in Sources */,
 			);
@@ -410,6 +424,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.KormanChen.Infilingual;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -426,6 +441,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.KormanChen.Infilingual;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
